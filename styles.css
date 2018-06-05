@@ -42,8 +42,8 @@ font-family: 'Raleway', sans-serif;
     transition: all .2s ease-in-out;
     cursor: pointer;
     display: flex;
-    position: relative;
     width: 75px;
+    
     height: 75px;
     justify-content: center;
     align-items: center;
@@ -108,4 +108,55 @@ ul li{
     color: #3fa;
     font-family: 'Open Sans', sans-serif;
 
+}
+.modalFather{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.move-box1{
+    transform: translate(95px,95px);
+}
+.move-box2{
+    transform: translate(-95px,95px);
+}
+.move-box3{
+    transform: translate(95px,-95px);
+}
+.move-box4{
+    transform: translate(-95px,-95px);
+}
+
+
+.modalFather-active{
+    z-index: 1;
+    opacity: 1;
+}
+.icon-container{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2%;
+    left: 96%;
+    color: #3f9;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-container i{
+    color: inherit;
 }
